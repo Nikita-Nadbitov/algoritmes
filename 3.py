@@ -28,11 +28,13 @@ def header_table():
     line_for_table()
     
 def table(dx, r):
-    x0 = -4
-    x1 = 6
+    x0 = -4.0
+    x1 = 6.0
     header_table()
     while x0 != x1:
-        print('{:<1} {:<10} {:<1} {:<10} {:<1}'.format('|', round(x0, 3), '|', round(task_1(round(x0, 3),3)), '|'))
+        z = round(x0, 8)
+        y = round(task_1(x0, r), 8)
+        print('{:<1} {:<10} {:<1} {:<10} {:<1}'.format('|', z, '|', y, '|'))
         line_for_table()
         x0 += dx
 
