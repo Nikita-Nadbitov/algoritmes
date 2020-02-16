@@ -67,6 +67,14 @@ def teilor(x, n):
         n0 = n0 + 1
     sum = math.pi/2 - (x + sum)
     return round(sum, n)
+
+def table_tailor(x, x0, dx, n):
+    header_table()
+    while x0 < x:
+        line_for_table()
+        print('{:<1} {:<10} {:<1} {:<10} {:<1}'.format('|', round(x0, 8), "|", round(teilor(x0, n), 8), '|'))
+        line_for_table()
+        x0 += dx
     
 task_number = int(input("Введите номер задания "))
 if task_number == 1:
@@ -80,8 +88,10 @@ elif task_number == 2:
     y = float(input("Введите окончание диапозона координат y, y="))
     series(x0, x, y0, y)
 elif task_number == 3:
-    x = float(input("Введите x из диапозона от -1 до 1, x="))
+    x0 = float(input("Введите x из диапозона от -1 до 1, x0="))
+    x = float(input("Введите x из диапозона от -1 до 1, x > x0, x="))
+    dx = float(input("Введите шаг приращения, dx="))
     n = int(input("Введите число шагов для ряда Тейлора, n="))
-    print("Значение ряда Тейлора для x=", x, "n=", n, "равняется  arccos(x)=", teilor(x, n))
+    table_tailor(x, x0, dx, n)
 else:
     print("Неправильный номер.")
