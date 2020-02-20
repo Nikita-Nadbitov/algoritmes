@@ -33,7 +33,7 @@ def table(dx, r):
     header_table()
     while x0 != x1:
         z = round(x0, 8)
-        y = round(task_1(x0, r), 8)
+        y = task_1(x0, r)
         print('{:<1} {:<10} {:<1} {:<10} {:<1}'.format('|', z, '|', y, '|'))
         line_for_table()
         x0 += dx
