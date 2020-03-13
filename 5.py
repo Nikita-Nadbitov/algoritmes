@@ -1,5 +1,6 @@
 import math
 import random
+from bisect import bisect_left 
 import time
 #import matplotlib.pyplot as plt
 
@@ -75,6 +76,32 @@ def jump_search(array, key):
         return previous
     return -1
 
+def fibMonaccianSearch(arr, x, n):  
+    fibMMm2 = 0 # (m-2)'th Fibonacci No. 
+    fibMMm1 = 1 # (m-1)'th Fibonacci No. 
+    fibM = fibMMm2 + fibMMm1 # m'th Fibonacci 
+    while (fibM < n): 
+        fibMMm2 = fibMMm1 
+        fibMMm1 = fibM 
+        fibM = fibMMm2 + fibMMm1 
+    offset = -1;  
+    while (fibM > 1): 
+        i = min(offset+fibMMm2, n-1) 
+        if (arr[i] < x): 
+            fibM = fibMMm1 
+            fibMMm1 = fibMMm2 
+            fibMMm2 = fibM - fibMMm1 
+            offset = i 
+        elif (arr[i] > x): 
+            fibM = fibMMm2 
+            fibMMm1 = fibMMm1 - fibMMm2 
+            fibMMm2 = fibM - fibMMm1 
+        else : 
+            return i 
+    if(fibMMm1 and arr[offset+1] == x): 
+        return offset+1; 
+    return -1
+
 def generation(n, first, last):
     array = []
     for i in range(n):
@@ -98,6 +125,10 @@ def choose_algorithm_for_search(array, key, type='linear_search'):
     elif type == 'jump_search':
         starttime = time.monotonic()
         jump_search(array, key)
+        runtime = time.monotonic() - starttime
+    elif type == 'fibMonaccianSearch':
+        starttime = time.monotonic()
+        fibMonaccianSearch(array, key, len(array))
         runtime = time.monotonic() - starttime
     else:
         raise ValueError("Неизвестное значение type", type)
@@ -123,7 +154,7 @@ def time_for_algorithms_search(array, key, type='linear_search'):
 
 
 def get_time(*args, key, reqired_vector):
-    list_type_search = ['binar_search', 'linear_search', 'jump_search', 'interpolation_search']
+    list_type_search = ['binar_search', 'linear_search', 'jump_search', 'interpolation_search', 'fibMonaccianSearch']
     for i in range(len(args)):
         args[i].append(time_for_algorithms_search(reqired_vector, key, list_type_search[i]))
 
@@ -137,23 +168,19 @@ def print_to_file(args, length, filename):
     for j in range(len(args)):
         file.write('{:<1}{:<30}{:<1}{:<30}{:<1}{:<30}{:<1}{:<30}{:<1}'.format("|", args[j][0], "|", args[j][1], "|", args[j][2], "|", length[j], "|") + '\n')
     file.close()
-
-
-n = 10000000
+    
+    
+n = 100000
 s = 121
 
-vector = generation(n, -1000, 1000)
-run_bin = []
-run_lin = []
-run_inter = []
-run_jump = []
 length_ar = []
+fib = []
 
-while 1000 >= n:
-        get_time(run_bin, run_lin, run_jump, run_inter, key=s, reqired_vector=vector)
-        length_ar.append(n)
-        n += 10000000
-print_to_file(run_bin, length_ar, 'binar_10000000_100000000')
-print_to_file(run_lin, length_ar, 'linar_10000000_100000000')
-print_to_file(run_jump, length_ar, 'jump_search_10000000_100000000')
-print_to_file(run_inter, length_ar, 'inter_10000000_100000000')
+while n <= 1000000:
+    vector = generation(n, -1000, 1000)
+    length_ar.append(n)
+    get_time(fib, key=s, reqired_vector=vector)
+    print(n)
+    n += 100000
+
+print_to_file(fib, length_ar, str('fibonachi'+ str(str(int(n)))))
