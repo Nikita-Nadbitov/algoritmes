@@ -1,6 +1,7 @@
 import random
-import  time
-import operator
+import time
+import matplotlib.pyplot as plt
+
 
 def initizialtion(n):
     arr = []
@@ -149,3 +150,35 @@ def runtime(n, key_dict=0):
         s += run
     return min_time, s/50, max_time
 
+n = 10
+n_count = []
+avg = []
+mini = []
+maximum = []
+while n < 1000000:
+    result = runtime(n, 0)
+    n_count.append(n)
+    avg.append(result[1])
+    maximum.append(result[2])
+    mini.append(result[0])
+    print(n)
+    if n < 100:
+        n += 10
+    elif n < 1000:
+        n += 100
+    elif n < 10000:
+        n += 1000
+    elif n < 100000:
+        n += 10000
+    else:
+        n += 100000
+
+plt.plot(n_count, avg, 'g')
+plt.ylabel('Время')
+plt.xlabel('Длина массива')
+plt.title('Сортировка пузырьком')
+plt.tight_layout()
+plt.plot(n_count, mini, 'b')
+plt.plot(n_count, maximum, 'r')
+plt.grid()
+plt.savefig('bubble')

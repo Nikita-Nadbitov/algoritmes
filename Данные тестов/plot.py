@@ -4,7 +4,7 @@ y_min = []
 y_avg = []
 y_max = []
 x = []
-for line in open("jump", "r"):
+for line in open("fib", "r"):
     n = 1
     while line[n] != ' ':
         n += 1
@@ -37,7 +37,7 @@ for line in open("jump", "r"):
 plt.plot(x, y_min, 'g')
 plt.ylabel('Время')
 plt.xlabel('Длина массива')
-plt.title('Поиск скачками')
+plt.title('Фибоначиев поиск')
 plt.tight_layout()
 plt.plot(x, y_avg, 'b')
 plt.plot(x, y_max, 'r')
