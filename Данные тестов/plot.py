@@ -1,45 +1,20 @@
+import numpy as np
 import matplotlib.pyplot as plt
 
-y_min = []
-y_avg = []
-y_max = []
-x = []
-for line in open("fib", "r"):
-    n = 1
-    while line[n] != ' ':
-        n += 1
-    try:
-        y_min.append(float(line[1:n]))
-    except ValueError:
-        print()
-    n = 32
-    while line[n] != ' ':
-        n += 1
-    try:
-        y_avg.append(float(line[32:n]))
-    except ValueError:
-        print()
-    n = 63
-    while line[n] != ' ':
-        n += 1
-    try:
-       y_max.append(float(line[63:n]))
-    except ValueError:
-       print()
-    n = 94
-    while line[n] != ' ':
-        n += 1
-    try:
-        x.append(int(line[94:n]))
-    except ValueError:
-       print()
 
-plt.plot(x, y_min, 'g')
-plt.ylabel('Время')
-plt.xlabel('Длина массива')
-plt.title('Фибоначиев поиск')
-plt.tight_layout()
-plt.plot(x, y_avg, 'b')
-plt.plot(x, y_max, 'r')
-plt.grid()
-plt.savefig('jump')
+def func(x):
+    return np.sqrt((10 ** 10) / ((10 ** 4 - 4 * np.pi ** 2 * x ** 2) + 4 * np.pi ** 2 * x ** 2))
+
+if __main__ == '__main__':
+    x = np.linspace(10 ** 8, 10 ** 12, 10 ** 9, dtype=np.float64)
+    y = np.float64(func(x))
+    print(len(x))
+
+    plt.loglog(x, y, 'g')
+    # plt.ylabel('Время')
+    # plt.xlabel('Длина массива')
+    plt.title("Модуль передаточной функции")
+    plt.tight_layout()
+    plt.grid()
+    plt.show()
+    plt.savefig()
