@@ -20,7 +20,6 @@ class Linked_List:
             return out + ']'
         return 'Linked_list []'
 
-
     def __getitem__(self, index):
         length = 0
         current = Node(None, None)
@@ -84,32 +83,27 @@ class Linked_List:
         return oldhead.value
 
     def del_element(self, value):
-        if self.length != 0:
-            self.length -= 1
-        if self.length != 0:
-            self.length -= 1
         first = self.first
-        if first is not None:
-            if first.value == value:
-                self.first = first.next
-                first = None
-                return
-        while first is not None:
-            if first.value == value:
-                break
+        if first is not None and first.value == value:
+            self.first = first.next
+            first = None
+            self.length -= 1
+            return
+        while first is not None or value != first.value:
             last = first
             first = first.next
         if first is None:
             return
         last.next = first.next
         first = None
+        self.length -= 1
 
     def search(self, value):
         current = self.first
         count = 0
         while current is not None and current.value != value:
-            if current.value == value:
-                return count
             count += 1
             current = current.next
+        if current is None or current.value != value:
+            count = -1
         return count
