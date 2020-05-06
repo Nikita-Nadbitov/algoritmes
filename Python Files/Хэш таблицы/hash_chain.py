@@ -41,6 +41,13 @@ class ChainHashTable:
             i+=1
         del self.hash_table[adr][i]
 
+    def find_item(self, info):
+        adr = self.__hash_func(info.phone)
+        i = 0
+        while self.hash_table[adr][i].info != info:
+            i += 1
+        return adr, i
+
     def print(self):
         print("{:<6}{:<1}{:<6}{:<20}{:<20}{:<20}".format("N", "/", "N", "NAME", "FAMILY", "PHONE"))
         for i in range(self.table_size):

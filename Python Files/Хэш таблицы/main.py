@@ -16,20 +16,13 @@ class HashItem:
     visit: bool = False
 
 
-@dataclass
-class HashItemChain:
-    info: TInfo
-    del_info: bool = False
-
-
 class Hash:
-    hash_table: List[HashItemChain]
     info: TInfo
 
     def __init__(self, table_size=10):
         self.table_size = table_size
         self.info = TInfo()
-        self.hash_table = [HashItemChain(info=self.info) for _ in range(self.table_size)]
+        self.hash_table = [HashItem(info=self.info) for _ in range(self.table_size)]
         self.size = 0
         self.step = 21
 
@@ -79,7 +72,7 @@ class Hash:
         result = False
         i = 0
         if self.size != 0:
-            i = self.hash_function(phone)
+            i = self.__hash_function(phone)
             if self.hash_table[i].info.phone == phone:
                 self.hash_table[i].empty = True
                 result = True
