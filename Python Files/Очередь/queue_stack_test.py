@@ -16,13 +16,18 @@ class test_QueueFIFO(unittest.TestCase):
 
     def test_del_element(self):
         a = queue_stack.QueueFIFO()
-        print('test_del_element')
         a.add_item(8)
         a.add_item(7)
         a.add_item(9)
         a.del_item()
         self.assertEqual(7, a[0])
         del a
+
+    def test_find_element(self):
+        a = queue_stack.QueueFIFO()
+        for i in range(10):
+            a.add_item(i)
+        self.assertEqual(8, a.search_item(8))
 
 class test_StackLIFO(unittest.TestCase):
 
@@ -42,6 +47,12 @@ class test_StackLIFO(unittest.TestCase):
             a.add_item(i)
         for i in range(39, -1, 1):
             self.assertEqual(i, a[len(a) - i])
+
+    def test_find_element(self):
+        a = queue_stack.StackLIFO()
+        for i in range(10):
+            a.add_item(i)
+        self.assertEqual(-1, a.search_item(78))
 
 if __name__ == '__main__':
     unittest.main()

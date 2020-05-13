@@ -36,6 +36,16 @@ class QueueFIFO:
             copy.append(self.items[i])
         self.items = copy
 
+    def search_item(self, item):
+        key = 0
+        while self.items[key] != item and key < len(self.items):
+            key += 1
+        if key == len(self.items) - 1:
+            return -1
+        else:
+            return len(self.items) - key - 1
+
+
 
 class StackLIFO:
 
@@ -70,29 +80,13 @@ class StackLIFO:
             copy.append(self.items[i])
         self.items = copy
 
-def add_value(data_structure, value):
-    data_structure.add_item(value)
+    def search_item(self, item):
+        key = 0
+        while key < len(self.items):
+            if self.items[key] == item:
+                return key
+            else:
+                key += 1
+        key = -1
+        return key
 
-def split_text(text:str, number:int):
-    ctext = text.split(' ')
-    msg = ''
-    msg_ret = []
-    i = 0
-    while i <= len(ctext) - 1:
-        if i == 0 or msg == '':
-            msg += ctext[i]
-            i += 1
-        elif len(msg) + len(ctext[i]) + 1 <= number and msg != '':
-            msg += ' '
-            msg += ctext[i]
-            i += 1
-        else:
-            msg_ret.append(msg)
-            msg = ''
-    msg_ret.append(msg)
-    return msg_ret
-
-
-print(split_text('доброе утро', 3))
-print(split_text('у нас хорошая погода', 5))
-print(split_text('погода хорошая у всех нас', 15))
