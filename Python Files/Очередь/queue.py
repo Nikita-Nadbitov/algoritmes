@@ -4,17 +4,17 @@ from task import Task
 
 @dataclass()
 class QueueOne:
-    list_of_task: list = []
+    list_of_task = []
     is_empty: bool = True
 
 @dataclass()
 class QueueTwo:
-    list_of_task: list = []
+    list_of_task = []
     is_empty: bool = True
 
 @dataclass()
 class QueueThree:
-    list_of_task: list = []
+    list_of_task = []
     is_empty: bool = True
 
 class Queue():
@@ -25,26 +25,35 @@ class Queue():
         self.q3 = QueueThree
 
     def add_task(self, task:Task):
-        queue_list = [self.q1, self.q2, self.q3]
-        queue_list[task.get_type].list_of_task.append(task)
-        queue_list[task.get_type].is_empty = False
+        if task.get_type() == 0:
+            self.q1.list_of_task.append(task)
+            self.q1.is_empty = False
+        elif task.get_type() == 1:
+            self.q2.list_of_task.append(task)
+            self.q2.is_empty = False
+        elif task.get_type() == 2:
+            self.q3.list_of_task.append(task)
+            self.q3.is_empty = False
 
-    @property
     def del_task(self):
-        if self.q1.is_empty != False:
+        if not self.q1.is_empty:
             task = self.q1.list_of_task.pop(0)
             if len(self.q1.list_of_task) == 0:
-                self.q1.is_empty = False
-        elif self.q2.is_empty != False:
+                self.q1.is_empty = True
+        elif not self.q2.is_empty:
             task = self.q2.list_of_task.pop(0)
             if len(self.q2.list_of_task) == 0:
-                self.q2.is_empty = False
-        elif self.q3.is_empty != False:
+                self.q2.is_empty = True
+        elif not self.q3.is_empty:
             task = self.q3.list_of_task.pop(0)
             if len(self.q3.list_of_task) == 0:
-                self.q3.is_empty = False
+                self.q3.is_empty = True
+        else:
+            task = -1
         return task
 
-    @property
+    def __str__(self):
+        return str(str(self.q1.list_of_task) + str(self.q1.is_empty) + str(self.q2.list_of_task)  + str(self.q2.is_empty) + str(self.q3.list_of_task) + str(self.q3.is_empty))
+
     def get_queue_empty_flag(self):
-        return self.q1.is_empty, self.q2.is_empty, self.q3.is_empty
+        return self.q1.is_empty and self.q2.is_empty and self.q3.is_empty

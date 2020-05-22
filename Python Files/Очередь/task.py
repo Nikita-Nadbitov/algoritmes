@@ -23,10 +23,11 @@ class Task():
         number = rnd.randint(high=3, low=0)
         self.current_task = list_of_task[number]
 
-    @property
     def get_time(self):
         return self.current_task.time
 
-    @property
     def get_type(self):
         return self.current_task.type_of_task
+
+    def set_time(self):
+        self.current_task.time -= 1
