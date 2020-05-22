@@ -16,9 +16,10 @@ class Stack:
         self.stack.is_empty = False
 
     def del_item(self):
-        self.stack.length -= 1
-        if self.stack.length == 0:
-            self.stack.is_empty = True
+        if self.stack.length != 0:
+            self.stack.length -= 1
+            if self.stack.length == 0:
+                self.stack.is_empty = True
         return self.stack.list_of_task.pop(len(self.stack.list_of_task)-1)
 
     def check_is_empty(self):
@@ -26,9 +27,6 @@ class Stack:
 
     def get_length(self):
         return self.stack.length
-
-    def set_empty(self):
-        self.stack.is_empty = True
 
     def __str__(self):
         string = "|type|time|"

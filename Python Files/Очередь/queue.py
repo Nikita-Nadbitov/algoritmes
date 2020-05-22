@@ -3,26 +3,16 @@ from task import Task
 
 
 @dataclass()
-class QueueOne:
-    list_of_task = []
-    is_empty: bool = True
-
-@dataclass()
-class QueueTwo:
-    list_of_task = []
-    is_empty: bool = True
-
-@dataclass()
-class QueueThree:
+class QueueData:
     list_of_task = []
     is_empty: bool = True
 
 class Queue():
 
     def __init__(self):
-        self.q1 = QueueOne
-        self.q2 = QueueTwo
-        self.q3 = QueueThree
+        self.q1 = QueueData()
+        self.q2 = QueueData()
+        self.q3 = QueueData()
 
     def add_task(self, task:Task):
         if task.get_type() == 0:

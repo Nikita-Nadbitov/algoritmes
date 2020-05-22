@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aa800e2-9d81-4707-a2af-8e1d034d9ebe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Python Files/Очередь/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python Files/Очередь/stack.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Python Files/Очередь/processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Files/Очередь/processor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Python Files/Очередь/queue.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Files/Очередь/queue.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python Files/Очередь/stack.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Files/Очередь/stack.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Python Files/Очередь/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Files/Очередь/task.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -197,7 +196,7 @@
       <workItem from="1589975150239" duration="19143000" />
       <workItem from="1590006044494" duration="1202000" />
       <workItem from="1590134527632" duration="61000" />
-      <workItem from="1590148719538" duration="220000" />
+      <workItem from="1590148719538" duration="1294000" />
     </task>
     <servers />
   </component>
@@ -225,33 +224,33 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="2114" y="217" width="424" height="483" key="FileChooserDialogImpl/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1589554735961" />
-    <state width="1874" height="332" key="GridCell.Tab.0.bottom" timestamp="1590007245197">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1422" height="305" key="GridCell.Tab.0.bottom" timestamp="1590149555504">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1874" height="332" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1590007245197" />
     <state width="1874" height="343" key="GridCell.Tab.0.bottom/0.27.3286.1053@0.27.3286.1053" timestamp="1590004404179" />
-    <state width="1874" height="278" key="GridCell.Tab.0.bottom/1366.0.1920.1080/0.27.1366.741@0.27.1366.741" timestamp="1589227903196" />
+    <state width="1422" height="305" key="GridCell.Tab.0.bottom/1366.0.1920.1080/0.27.1366.741@0.27.1366.741" timestamp="1590149555504" />
     <state width="1874" height="343" key="GridCell.Tab.0.bottom/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1589388569369" />
-    <state width="1874" height="332" key="GridCell.Tab.0.center" timestamp="1590007245197">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1422" height="305" key="GridCell.Tab.0.center" timestamp="1590149555504">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1874" height="332" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1590007245197" />
     <state width="1874" height="343" key="GridCell.Tab.0.center/0.27.3286.1053@0.27.3286.1053" timestamp="1590004404179" />
-    <state width="1874" height="278" key="GridCell.Tab.0.center/1366.0.1920.1080/0.27.1366.741@0.27.1366.741" timestamp="1589227903196" />
+    <state width="1422" height="305" key="GridCell.Tab.0.center/1366.0.1920.1080/0.27.1366.741@0.27.1366.741" timestamp="1590149555504" />
     <state width="1874" height="343" key="GridCell.Tab.0.center/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1589388569368" />
-    <state width="1874" height="332" key="GridCell.Tab.0.left" timestamp="1590007245197">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1422" height="305" key="GridCell.Tab.0.left" timestamp="1590149555504">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1874" height="332" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1590007245197" />
     <state width="1874" height="343" key="GridCell.Tab.0.left/0.27.3286.1053@0.27.3286.1053" timestamp="1590004404178" />
-    <state width="1874" height="278" key="GridCell.Tab.0.left/1366.0.1920.1080/0.27.1366.741@0.27.1366.741" timestamp="1589227903196" />
+    <state width="1422" height="305" key="GridCell.Tab.0.left/1366.0.1920.1080/0.27.1366.741@0.27.1366.741" timestamp="1590149555504" />
     <state width="1874" height="343" key="GridCell.Tab.0.left/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1589388569368" />
-    <state width="1874" height="332" key="GridCell.Tab.0.right" timestamp="1590007245197">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1422" height="305" key="GridCell.Tab.0.right" timestamp="1590149555504">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1874" height="332" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1590007245197" />
     <state width="1874" height="343" key="GridCell.Tab.0.right/0.27.3286.1053@0.27.3286.1053" timestamp="1590004404179" />
-    <state width="1874" height="278" key="GridCell.Tab.0.right/1366.0.1920.1080/0.27.1366.741@0.27.1366.741" timestamp="1589227903196" />
+    <state width="1422" height="305" key="GridCell.Tab.0.right/1366.0.1920.1080/0.27.1366.741@0.27.1366.741" timestamp="1590149555504" />
     <state width="1874" height="343" key="GridCell.Tab.0.right/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1589388569369" />
     <state width="1874" height="343" key="GridCell.Tab.1.bottom" timestamp="1590004404180">
       <screen x="0" y="27" width="3286" height="1053" />
@@ -300,6 +299,6 @@
     <SUITE FILE_PATH="coverage/algoritmes$Unittests_in_queue_stack_test_py.coverage" NAME="Unittests in queue_stack_test.py Coverage Results" MODIFIED="1589367109225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/algoritmes$task.coverage" NAME="task Coverage Results" MODIFIED="1589995856668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python Files/Очередь" />
     <SUITE FILE_PATH="coverage/algoritmes$queue_stack.coverage" NAME="queue_stack Coverage Results" MODIFIED="1589286001719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python Files/Очередь" />
-    <SUITE FILE_PATH="coverage/algoritmes$main.coverage" NAME="main Coverage Results" MODIFIED="1590149180603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python Files/Очередь" />
+    <SUITE FILE_PATH="coverage/algoritmes$main.coverage" NAME="main Coverage Results" MODIFIED="1590149555491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python Files/Очередь" />
   </component>
 </project>

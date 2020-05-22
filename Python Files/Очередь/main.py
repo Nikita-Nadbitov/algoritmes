@@ -10,7 +10,6 @@ if __name__ == "__main__":
     for i in range(10):
         a = Task()
         task_queue.add_task(a)
-        print(i)
         if proc.idle_proc():
             if not task_queue.get_queue_empty_flag():
                 proc.add_task(task_queue.del_task())
