@@ -8,7 +8,6 @@ class Thread:
     idle: bool = True
 
 class Processor():
-
     def __init__(self): 
         self.p1 = Thread()
         self.p2 = Thread()

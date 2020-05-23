@@ -1,5 +1,7 @@
 from dataclasses import dataclass
+
 from numpy import random as rnd
+
 
 @dataclass()
 class TaskData:
@@ -7,7 +9,6 @@ class TaskData:
     type_of_task: int = None
 
 class Task():
-
     def __init__(self):
         time_work = [3, 6, 9]
         type_of_task = rnd.randint(high=3, low=0)

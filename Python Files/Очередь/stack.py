@@ -20,7 +20,8 @@ class Stack:
             self.stack.length -= 1
             if self.stack.length == 0:
                 self.stack.is_empty = True
-        return self.stack.list_of_task.pop(len(self.stack.list_of_task)-1)
+            return self.stack.list_of_task.pop(len(self.stack.list_of_task)-1)
+        return -1
 
     def check_is_empty(self):
         return self.stack.is_empty

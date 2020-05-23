@@ -7,7 +7,7 @@ if __name__ == "__main__":
     proc = Processor()
     task_queue = Queue()
     task_stack = Stack()
-    for i in range(10):
+    while True:
         a = Task()
         task_queue.add_task(a)
         if proc.idle_proc():
