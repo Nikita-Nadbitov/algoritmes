@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aa800e2-9d81-4707-a2af-8e1d034d9ebe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/algoritmes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/algoritmes.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Files/Очередь/processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Files/Очередь/processor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Files/Очередь/task.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Files/Очередь/task.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Files/Хэш таблицы/hash_chain.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Files/Хэш таблицы/hash_chain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python Files/Хэш таблицы/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python Files/Хэш таблицы/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Данные тестов/plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/Данные тестов/plot.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,14 +41,14 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Python Files/dima" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.search">
     <configuration name="binary_tree" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="algoritmes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -107,6 +107,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Files/Очередь/queue_stack.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="search" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="algoritmes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python Files/надбитов" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python Files/надбитов/search.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -191,14 +213,15 @@
       <item itemvalue="Python.queue_stack" />
       <item itemvalue="Python.task" />
       <item itemvalue="Python tests.Unittests in queue_stack_test.py" />
+      <item itemvalue="Python.search" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.search" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.binary_tree" />
         <item itemvalue="Python.task" />
         <item itemvalue="Python.queue_stack" />
-        <item itemvalue="Python tests.Unittests in queue_stack_test.py" />
       </list>
     </recent_temporary>
   </component>
@@ -234,6 +257,7 @@
       <workItem from="1591190392719" duration="9000" />
       <workItem from="1591764442639" duration="1541000" />
       <workItem from="1591970895549" duration="35000" />
+      <workItem from="1593166021328" duration="2568000" />
     </task>
     <servers />
   </component>
@@ -263,58 +287,66 @@
     <state x="191" y="161" width="614" height="478" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1591970928384" />
     <state x="268" y="217" width="424" height="483" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1590220755883" />
     <state x="2114" y="217" width="424" height="483" key="FileChooserDialogImpl/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1590162035160" />
-    <state width="1320" height="103" key="GridCell.Tab.0.bottom" timestamp="1590265734051">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1320" height="172" key="GridCell.Tab.0.bottom" timestamp="1593168589099">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state width="1320" height="172" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1593168589099" />
     <state width="1320" height="103" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1590265734051" />
     <state width="1320" height="103" key="GridCell.Tab.0.bottom/0.27.3286.1053@0.27.3286.1053" timestamp="1590262545529" />
     <state width="1874" height="235" key="GridCell.Tab.0.bottom/1366.0.1920.1080/0.27.1366.741@0.27.1366.741" timestamp="1590177867903" />
     <state width="1874" height="305" key="GridCell.Tab.0.bottom/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1590177069492" />
-    <state width="1320" height="103" key="GridCell.Tab.0.center" timestamp="1590265734051">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1320" height="172" key="GridCell.Tab.0.center" timestamp="1593168589099">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state width="1320" height="172" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1593168589099" />
     <state width="1320" height="103" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1590265734051" />
     <state width="1320" height="103" key="GridCell.Tab.0.center/0.27.3286.1053@0.27.3286.1053" timestamp="1590262545528" />
     <state width="1874" height="235" key="GridCell.Tab.0.center/1366.0.1920.1080/0.27.1366.741@0.27.1366.741" timestamp="1590177867903" />
     <state width="1874" height="305" key="GridCell.Tab.0.center/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1590177069492" />
-    <state width="1320" height="103" key="GridCell.Tab.0.left" timestamp="1590265734050">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1320" height="172" key="GridCell.Tab.0.left" timestamp="1593168589098">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state width="1320" height="172" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1593168589098" />
     <state width="1320" height="103" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1590265734050" />
     <state width="1320" height="103" key="GridCell.Tab.0.left/0.27.3286.1053@0.27.3286.1053" timestamp="1590262545528" />
     <state width="1874" height="235" key="GridCell.Tab.0.left/1366.0.1920.1080/0.27.1366.741@0.27.1366.741" timestamp="1590177867903" />
     <state width="1874" height="305" key="GridCell.Tab.0.left/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1590177069492" />
-    <state width="1320" height="103" key="GridCell.Tab.0.right" timestamp="1590265734051">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1320" height="172" key="GridCell.Tab.0.right" timestamp="1593168589099">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state width="1320" height="172" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1593168589099" />
     <state width="1320" height="103" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1590265734051" />
     <state width="1320" height="103" key="GridCell.Tab.0.right/0.27.3286.1053@0.27.3286.1053" timestamp="1590262545528" />
     <state width="1874" height="235" key="GridCell.Tab.0.right/1366.0.1920.1080/0.27.1366.741@0.27.1366.741" timestamp="1590177867903" />
     <state width="1874" height="305" key="GridCell.Tab.0.right/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1590177069492" />
-    <state width="1874" height="314" key="GridCell.Tab.1.bottom" timestamp="1590236648272">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1320" height="215" key="GridCell.Tab.1.bottom" timestamp="1593166655224">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state width="1320" height="215" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1593166655224" />
     <state width="1874" height="314" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1590236648272" />
     <state width="1874" height="343" key="GridCell.Tab.1.bottom/0.27.3286.1053@0.27.3286.1053" timestamp="1590004404180" />
     <state width="1874" height="235" key="GridCell.Tab.1.bottom/1366.0.1920.1080/0.27.1366.741@0.27.1366.741" timestamp="1590177867904" />
     <state width="1874" height="235" key="GridCell.Tab.1.bottom/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1590176894668" />
-    <state width="1874" height="314" key="GridCell.Tab.1.center" timestamp="1590236648268">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1320" height="215" key="GridCell.Tab.1.center" timestamp="1593166655220">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state width="1320" height="215" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1593166655220" />
     <state width="1874" height="314" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1590236648268" />
     <state width="1874" height="343" key="GridCell.Tab.1.center/0.27.3286.1053@0.27.3286.1053" timestamp="1590004404179" />
     <state width="1874" height="235" key="GridCell.Tab.1.center/1366.0.1920.1080/0.27.1366.741@0.27.1366.741" timestamp="1590177867903" />
     <state width="1874" height="235" key="GridCell.Tab.1.center/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1590176894668" />
-    <state width="1874" height="314" key="GridCell.Tab.1.left" timestamp="1590236648268">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1320" height="215" key="GridCell.Tab.1.left" timestamp="1593166655219">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state width="1320" height="215" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1593166655219" />
     <state width="1874" height="314" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1590236648268" />
     <state width="1874" height="343" key="GridCell.Tab.1.left/0.27.3286.1053@0.27.3286.1053" timestamp="1590004404179" />
     <state width="1874" height="235" key="GridCell.Tab.1.left/1366.0.1920.1080/0.27.1366.741@0.27.1366.741" timestamp="1590177867903" />
     <state width="1874" height="235" key="GridCell.Tab.1.left/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1590176894667" />
-    <state width="1874" height="314" key="GridCell.Tab.1.right" timestamp="1590236648272">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state width="1320" height="215" key="GridCell.Tab.1.right" timestamp="1593166655222">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state width="1320" height="215" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1593166655222" />
     <state width="1874" height="314" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1590236648272" />
     <state width="1874" height="343" key="GridCell.Tab.1.right/0.27.3286.1053@0.27.3286.1053" timestamp="1590004404179" />
     <state width="1874" height="235" key="GridCell.Tab.1.right/1366.0.1920.1080/0.27.1366.741@0.27.1366.741" timestamp="1590177867903" />
@@ -323,9 +355,10 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="2117" y="173" width="418" height="615" key="RollbackChangesDialog/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1589205717303" />
-    <state x="172" y="12" key="SettingsEditor" timestamp="1590243782995">
-      <screen x="0" y="27" width="3286" height="1053" />
+    <state x="172" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1593166080642">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state x="172" y="31" width="1022" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1593166080642" />
     <state x="449" y="134" key="SettingsEditor/0.27.1920.1053@0.27.1920.1053" timestamp="1589976677852" />
     <state x="172" y="12" key="SettingsEditor/0.27.3286.1053@0.27.3286.1053" timestamp="1590243782995" />
     <state x="1864" y="179" width="925" height="595" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1589210676650">
@@ -357,7 +390,8 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/algoritmes$binary_tree.coverage" NAME="binary_tree Coverage Results" MODIFIED="1590238619011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python Files/Tree" />
     <SUITE FILE_PATH="coverage/algoritmes$queue_stack.coverage" NAME="queue_stack Coverage Results" MODIFIED="1589286001719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python Files/Очередь" />
-    <SUITE FILE_PATH="coverage/algoritmes$main.coverage" NAME="main Coverage Results" MODIFIED="1590254672519" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python Files/Очередь" />
+    <SUITE FILE_PATH="coverage/algoritmes$search.coverage" NAME="search Coverage Results" MODIFIED="1593168478750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python Files/надбитов" />
+    <SUITE FILE_PATH="coverage/algoritmes$main.coverage" NAME="main Coverage Results" MODIFIED="1593166125043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python Files/Очередь" />
     <SUITE FILE_PATH="coverage/algoritmes$4.coverage" NAME="binary_tree Coverage Results" MODIFIED="1590177823578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python Files/Tree" />
     <SUITE FILE_PATH="coverage/algoritmes$task.coverage" NAME="task Coverage Results" MODIFIED="1589995856668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python Files/Очередь" />
     <SUITE FILE_PATH="coverage/algoritmes$Unittests_in_queue_stack_test_py.coverage" NAME="Unittests in queue_stack_test.py Coverage Results" MODIFIED="1589367109225" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

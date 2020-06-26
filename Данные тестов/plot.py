@@ -11,9 +11,9 @@ if __main__ == '__main__':
     print(len(x))
 
     plt.loglog(x, y, 'g')
-    # plt.ylabel('Время')
-    # plt.xlabel('Длина массива')
-    plt.title("Модуль передаточной функции")
+    plt.ylabel('Время')
+    plt.xlabel('Длина массива')
+    plt.title("Интерполяционный поиск")
     plt.tight_layout()
     plt.grid()
     plt.show()
