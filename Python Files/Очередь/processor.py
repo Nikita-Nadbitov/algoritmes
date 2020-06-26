@@ -13,24 +13,18 @@ class Processor():
         self.p2 = Thread()
 
     def add_task(self, task: Task):
-        if task.get_type() in [0,1]:
-            if self.p1.idle:
-                self.p1.time_work = task.get_time()
-                self.p1.task_type = task.get_type()
-                self.p1.idle = False
-            elif self.p2.idle:
-                self.p2.time_work = task.get_time()
-                self.p2.task_type = task.get_type()
-                self.p2.idle = False
-        elif task.get_type() == 2:
-            if self.p2.idle:
-                self.p2.time_work = task.get_time()
-                self.p2.task_type = task.get_type()
-                self.p2.idle = False
-            elif self.p1.idle:
-                self.p1.time_work = task.get_time()
-                self.p1.task_type = task.get_type()
-                self.p1.idle = False
+        if self.p1.task_type < task.get_type():
+            l = Task()
+            l.set_type(task.get_type())
+            l.set_time(task.get_time())
+            stack.add_item(l)
+            self.p1.time_work = task.get_time()
+            self.p1.task_type = task.get_type()
+        elif self.idle_proc():
+            self.p1.time_work = task.get_time()
+            self.p1.task_type = task.get_type()
+        else:
+            stack.add_item(task)
 
     def __task_perform_p1(self):
         self.p1.time_work -= 1

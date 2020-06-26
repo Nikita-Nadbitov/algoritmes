@@ -22,3 +22,9 @@ class Task():
 
     def get_type(self):
         return self.current_task.type_of_task
+
+    def set_time(self, time):
+        self.time = time
+
+    def set_type(self, type):
+        self.type_of_task = type

@@ -85,11 +85,17 @@ class Hash:
                     self.size -= 1
         return result
 
-    def print(self):
-        print("{:<6}{:<20}{:<20}{:<20}".format("N", "NAME", "FAMILY", "PHONE"))
+    def __str__(self):
+        out = "{:<6}{:<20}{:<20}{:<20}".format("N", "NAME", "FAMILY", "PHONE") + '\n'
         for i in range(self.table_size):
             name: str = self.hash_table[i].info.name
             family = self.hash_table[i].info.family
             phone = self.hash_table[i].info.phone
-            print("{:<6}{:<20}{:<20}{:<20}".format(i + 1, name, family, phone))
-        print()
+            out += "{:<6}{:<20}{:<20}{:<20}".format(i + 1, name, family, phone) + '\n'
+        return out
+        
+        
+if __name__  == "__main__":
+    s = Hash(5)
+    s.add_hash('Tretyak', 'Sobaka', '2')
+    print(s)

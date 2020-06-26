@@ -48,12 +48,12 @@ class ChainHashTable:
             i += 1
         return adr, i
 
-    def print(self):
-        print("{:<6}{:<1}{:<6}{:<20}{:<20}{:<20}".format("N", "/", "N", "NAME", "FAMILY", "PHONE"))
+    def __str__(self):
+        out = "{:<6}{:<1}{:<6}{:<20}{:<20}{:<20}".format("N", "/", "N", "NAME", "FAMILY", "PHONE")
         for i in range(self.table_size):
             for j in range(len(self.hash_table[i])):
                 name: str = self.hash_table[i][j].info.name
                 family = self.hash_table[i][j].info.family
                 phone = self.hash_table[i][j].info.phone
-                print("{:<6}{:<1}{:<6}{:<20}{:<20}{:<20}".format(i + 1, '.', j+1, name, family, phone))
-        print()
+                out += "{:<6}{:<1}{:<6}{:<20}{:<20}{:<20}".format(i + 1, '.', j+1, name, family, phone)
+        return out
